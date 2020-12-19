@@ -1,0 +1,186 @@
+
+https://5e.tools/img/PotA/Stonemelder.png?v=1.117.4
+{
+	"name": "White Mask Hunter",
+	"source": "GameBreaker",
+	"page": 3,
+	"size": "M",
+	"type": {
+		"type": "construct",
+		"tags": [
+			"humoid"
+		]
+	},
+	"alignment": [
+		"L",
+		"N"
+	],
+	"ac": [
+		{
+			"ac": 18,
+			"from": [
+				"natural armor"
+			]
+		}
+	],
+	"hp": {
+		"average": 75,
+		"formula": "10d8 + 30"
+	},
+	"speed": {
+		"walk": 40
+	},
+	"str": 10,
+	"dex": 16,
+	"con": 16,
+	"int": 14,
+	"wis": 14,
+	"cha": 8,
+	"skill": {
+		"perception": "+5",
+		"survival": "+5",
+		"investigation": "+5"
+	},
+	"passive": 18,
+	"languages": [
+		"Common",
+		"Rectifier"
+	],
+	"cr": "5",
+	"spellcasting": [
+		{
+			"name": "Spellcasting",
+			"headerEntries": [
+				"The White Mask Hunter is a 7th-level spellcaster. Its spellcasting ability is Wisdom (spell save {@dc 12}, {@hit 5} to hit with spell attacks). It knows the following sorcerer spells:"
+			],
+			"spells": {
+				"0": {
+					"spells": [
+						"{@spell acid splash}",
+						"{@spell blade ward}",
+						"{@spell light}",
+						"{@spell mending}",
+						"{@spell mold earth|xge}"
+					]
+				},
+				"1": {
+					"spells": [
+						"{@spell expeditious retreat}",
+						"{@spell false life}",
+						"{@spell shield}"
+					],
+					"slots": 4
+				},
+				"2": {
+					"spells": [
+						"{@spell Maximilian's earthen grasp|xge}",
+						"{@spell shatter}"
+					],
+					"slots": 3
+				},
+				"3": {
+					"spells": [
+						"{@spell blink}",
+						"{@spell erupting earth|xge}"
+					],
+					"slots": 3
+				},
+				"4": {
+					"spells": [
+						"{@spell confusion}"
+					],
+					"slots": 1
+				}
+			},
+			"ability": "wis",
+			"type": "spellcasting"
+		}
+	],
+	"trait": [
+		{
+			"name": "Death Burst",
+			"entries": [
+				"When the Hunter dies, it turns to stone and explodes in a burst of rock shards, becoming a smoking pile of rubble. Each creature within 10 feet of the exploding Hunter must make a {@dc 14} Dexterity saving throw, taking 11 ({@damage 2d10}) bludgeoning damage on a failed save, or half as much damage on a successful one."
+			]
+		}
+	],
+	"action": [
+		{
+			"name": "Black Blade",
+			"entries": [
+				"{@atk mw} {@hit 5} to hit, reach 5 ft., one target. {@h}5 ({@damage 1d6 + 2}) Slashing damage. The Hunter can also expend a spell slot to deal extra damage, dealing {@damage 2d8} Slashing damage for a 1st level slot, plus an additional {@dice 1d8} for each level of the slot above 1st."
+			]
+		}
+	],
+	"traitTags": [
+		"Death Burst"
+	],
+	"languageTags": [
+		"C"
+	],
+	"damageTags": [
+		null,
+		"B"
+	],
+	"spellcastingTags": [
+		"CS"
+	],
+	"miscTags": [
+		"MW",
+		"AOE"
+	],
+	"tokenUrl": "https://5e.tools/img/PotA/Stonemelder.png?v=1.117.4",
+	"fluff": {
+		"name": "Stonemelder",
+		"source": "PotA",
+		"entries": [
+			{
+				"type": "entries",
+				"entries": [
+					{
+						"type": "entries",
+						"entries": [
+							{
+								"type": "entries",
+								"entries": [
+									"Stonemelders are spellcasters who gain their power from Ogremoch, using elemental earth magic to sheathe their bodies in carapaces of rock. They are elite champions of the cult and answer only to the cult leaders. Not even the Black Earth priests tell stonemelders what to do.",
+									"Each stonemelder carries a weapon known as a Black Earth rod. Such a rod is like an ordinary mace, but in the hands of a stonemelder, it serves as a conduit for Ogremoch's wrath."
+								]
+							}
+						]
+					}
+				]
+			}
+		]
+	},
+	"save": {
+		"dex": "+6",
+		"wis": "+5",
+		"con": "+6"
+	},
+	"resist": [
+		{
+			"resist": [
+				"bludgeoning",
+				"piercing",
+				"slashing"
+			],
+			"note": "from non magical items"
+		},
+		{
+			"resist": [
+				"cold",
+				"fire"
+			]
+		}
+	],
+	"immune": [
+		"necrotic"
+	],
+	"conditionImmune": [
+		"charmed",
+		"exhaustion",
+		"petrified",
+		"poisoned"
+	]
+}

@@ -1,0 +1,173 @@
+{
+	"name": "Clockwork Dragon",
+	"source": "GameBreaker",
+	"page": 4,
+	"size": "H",
+	"type": "construct",
+	"alignment": [
+		"N"
+	],
+	"ac": [
+		{
+			"ac": 19,
+			"from": [
+				"natural armor"
+			]
+		}
+	],
+	"hp": {
+		"formula": "22d12 + 88",
+		"average": 231
+	},
+	"speed": {
+		"walk": 30,
+		"fly": 90
+	},
+	"str": 24,
+	"dex": 11,
+	"con": 19,
+	"int": 10,
+	"wis": 10,
+	"cha": 3,
+	"save": {
+		"str": "+11",
+		"con": "+8"
+	},
+	"senses": [
+		"darkvision 120 ft.",
+		"blindsight 30 ft."
+	],
+	"passive": 10,
+	"resist": [
+		{
+			"resist": [
+				"bludgeoning",
+				"piercing",
+				"slashing"
+			],
+			"note": "from nonmagical attacks"
+		}
+	],
+	"immune": [
+		{
+			"immune": [
+				"poison"
+			]
+		},
+		{
+			"immune": [
+				"fire",
+				"psychic"
+			],
+			"note": "Regains half of all fire damage as hp"
+		}
+	],
+	"conditionImmune": [
+		"charmed",
+		"exhaustion",
+		"frightened",
+		"paralyzed",
+		"petrified",
+		"poisoned",
+		"unconscious"
+	],
+	"languages": [
+		"the languages known by its creator"
+	],
+	"cr": "11",
+	"trait": [
+		{
+			"name": "Immutable Form",
+			"entries": [
+				"The dragon is immune to any spell or effect that would alter its form."
+			]
+		},
+		{
+			"name": "Magic Resistance",
+			"entries": [
+				"The dragon has advantage on saving throws against spells and other magical effects."
+			]
+		},
+		{
+			"name": "Siege Monster",
+			"entries": [
+				"The dragon deals double damage to objects and structures."
+			]
+		},
+		{
+			"name": "Unusual Nature",
+			"entries": [
+				"The dragon doesn't require air, food, drink, or sleep, and it gains no benefit from finishing a short or long rest."
+			]
+		}
+	],
+	"action": [
+		{
+			"name": "Multiattack",
+			"entries": [
+				"The dragon uses its avenging eyes. It then makes three attacks: two with its claws and one with its tail. If the dragon isn't flying, it can also make one attack with its wings."
+			]
+		},
+		{
+			"name": "Claw",
+			"entries": [
+				"{@atk mw} {@hit 11} to hit, reach 5 ft., one target. {@h}14 ({@damage 2d6 + 7}) slashing damage."
+			]
+		},
+		{
+			"name": "Tail",
+			"entries": [
+				"{@atk mw} {@hit 11} to hit, reach 10 ft., one target. {@h}18 ({@damage 2d10 + 7}) bludgeoning damage."
+			]
+		},
+		{
+			"name": "Wings",
+			"entries": [
+				"{@atk mw} {@hit 11} to hit, reach 10 ft., one target. {@h}12 ({@damage 2d4 + 7}) bludgeoning damage."
+			]
+		},
+		{
+			"name": "Avenging Eyes",
+			"entries": [
+				"Any creature with an Intelligence of 4 or more that is within 30 feet of the dragon must succeed on a {@dc 16} Wisdom saving throw or be {@condition frightened} by it for 1 minute. A creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success. If a creature's saving throw is successful or the effect ends for it, the creature is immune to the dragons' Avenging Eyes for the next 24 hours."
+			]
+		},
+		{
+			"name": "Furnace Breath {@recharge 5}",
+			"entries": [
+				"The dragon exhales fire in a 30-foot cone. Each creature in that area must make a {@dc 17} Dexterity saving throw, taking 33 ({@damage 12d6}) fire damage on a failed save and is set on fire, or half as much damage on a successful one. If the target is a creature or a flammable object, it ignites. Until a creature takes an action to douse the fire, the target takes 5 ({@damage 1d10}) fire damage at the start of each of its turns."
+			]
+		}
+	],
+	"traitTags": [
+		"Immutable Form",
+		"Magic Resistance",
+		"Siege Monster"
+	],
+	"senseTags": [
+		"SD",
+		"B"
+	],
+	"actionTags": [
+		"Multiattack"
+	],
+	"damageTags": [
+		"S",
+		"B",
+		"F"
+	],
+	"miscTags": [
+		"MW",
+		"RCH",
+		"AOE"
+	],
+	"conditionInflict": [
+		"frightened"
+	],
+	"hasFluff": true,
+	"hasFluffImages": true,
+	"tokenUrl": "https://5e.tools/img/IDRotF/Chardalyn Dragon.png?v=1.127.5",
+	"vulnerable": [
+		"lightning"
+	]
+}
